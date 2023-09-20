@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont{
+   display: flex;
+   align-items: center;
+   height: 50px;
+   background-color: #053B50;
+    
+}
+
+.cont ul{
+    display: flex;
+    list-style: none;
+    border: 2px solid #053B50;
+    width: 100%;
+    /* margin: 5px; */
+    gap: 30px;
+    font-size: 20px;
+    color: rgba(240, 248, 255, 0.688);
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cont li{
+    text-align: center;
+}
+
+.cont li:hover{
+    color: #ffffff;
+}
+
+.log img{
+   width: 100px;
+   
+}
+
+.background{
+    /* background-image: url(/img/watch.jpg); */
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/watch.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position-y: 60%;
+    color: white;
+    line-height: 1.5;
+    padding-top: 14rem;
+    font-size: 30px;
+}
+
+/* .background .h{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+    /* padding-top: 250px; */
+/* } */
+.background .h1 {
+    /* padding-top: 2%; */
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* .background #off{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+.content h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+
+
+.watches{
+    display: grid;
+    grid-template-columns: 3fr  3fr 3fr;
+    /* grid-template-columns: none; */
+    margin-left: 2%;
+    margin: 10px;
+}
+
+.watches img{
+  width: 94%;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+  .op img{
+    width: 10%;
+}
+
+.op{
+    padding-inline-start: 20px;
+    background-color: #053B50;
+    width: 55%;
+}
+.op p{
+    width: 84%;
+}
+.c p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    background-color: #053B50;
+    padding-bottom: 25px;
+
+}
+
+.op p:hover{
+    color: whitesmoke;
+
+}
+
+.footer{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    background-color: #053B50;
+    padding-bottom: 25px;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.d,.n,.c li{
+    list-style: none;
+    padding: 15px 0 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+.d{
+    padding-top: 50px;
+}
+.c li a {
+    text-decoration: none;
+    color: black;
+}
+
+.d li,.n li{
+    margin-bottom: 15px;
+}
+.d li:hover{
+    color: whitesmoke;
+}
+.n li:hover{
+    color: whitesmoke;
+}
+.c li a {
+    color: bisque;
+}
+.c li a:hover{
+    color: whitesmoke;
+}
+.c {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+/* responsive */
+
+@media(max-width:1300px){
+    .background{
+        font-size: 25px;
+    }   
+}
+
+@media(max-width:1200px){
+    .background{
+        font-size: 23px;
+    }   
+}
+
+@media(max-width:1100px){
+    .background{
+        font-size: 21px;
+    }   
+}
+
+@media(max-width:1000px){
+    .background{
+        font-size: 20px;
+    }   
+}
+
+@media(max-width:900px){
+    .background{
+        font-size: 19px;
+        height: 70vh;
+    } 
+    .watches{
+        grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+        justify-items: center;
+    }
+}
+
+@media(max-width:800px){
+    .background{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:700px){
+    .background{
+        font-size: 15px;
+        height: 65vh;
+    }
+    .op img {
+        width: 27%;
+    }
+    .footer {
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:600px){
+    .background{
+        font-size: 13px ;
+    }
+
+    .d, .n, .c li{
+        font-size: 18px;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:500px){
+    .cont ul {
+        gap: 22px;
+        font-size: 18px;
+    }
+
+    .background{
+        font-size: 10px;
+        height: 40vh;
+    }
+    .op img {
+        width: 32%;
+    }
+    .d, .n, .c li{
+        font-size: 15px;
+    }
+
+    .footer {
+        font-size: 11px;
+    }
+}
+
+@media(max-width:400px){
+    .cont{
+        width: 110%;
+    }
+    .background{
+        width: 110%;
+        font-size: 8px;
+    }
+    .cont ul {
+        gap: 9px;
+        font-size: 16px;
+    }
+    .footer{
+        width: 110%;
+    }
+    .c{
+        width: 110%;
+    }
+    .d, .n, .c li {
+        font-size: 12px;
+    }
+}
